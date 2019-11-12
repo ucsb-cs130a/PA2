@@ -28,23 +28,23 @@ You will write code which maintains infomration about a weighted, undirected, gr
 
 You must implement the following methods:
 
-M1: Return the diameter of the graph.
+**M1**: Return the diameter of the graph.
 
-M2: Return the ratio of open triangles to closed triangles.
+**M2**: Return the ratio of open triangles to closed triangles.
 
-M3: Return the top k open triangles. A triangle is given higher prioirty if it has a larger total edge weight. Store the triangles in a heap (see M7)
+**M3**: Return the top k open triangles. A triangle is given higher prioirty if it has a larger total edge weight. Store the triangles in a heap (see M7)
 
-M4: (Early Deadline) Given a seed node with id i, and weight vector w, find the top k-skilled individuals around i.
+**M4**: (Early Deadline) Given a seed node with id i, and weight vector w, find the top k-skilled individuals around i.
 If the weight vector w = \[w1, w2, w3 ... wd] and the skill fector of a neighboring node f = \[f1, f2, ....\], then the prioirity of a node is given by dot(w, f) = w1f1 + w2f2 + .... + wdfd
 
-M5: Given a seed node i and weight vector w, give the highest scoring node that does not have an edge connecting to i
+**M5**: Given a seed node i and weight vector w, give the highest scoring node that does not have an edge connecting to i
 
-M6: Given two seed nodes i, j and weight vector w, compute the similarites of their top-k neighborhoods unsing the Jacard Index
+**M6**: Given two seed nodes i, j and weight vector w, compute the similarites of their top-k neighborhoods unsing the Jacard Index
 
-M7: Insert a node into the graph. Insert an edge into the graph. Incrementally compute M2 and M3 such that the cost of the insert plus the cost of the next call to M2 or M3 will be exponentiall faster than if the results were calculated from scratch.
+**M7**: Insert a node into the graph. Insert an edge into the graph. Incrementally compute M2 and M3 such that the cost of the insert plus the cost of the next call to M2 or M3 will be exponentiall faster than if the results were calculated from scratch.
 
 Bonus:
-M8: Remove a node  and edge from the graph. Incrementally compute M2 and M3 such that the cost of the insert plus the cost of the next call to M2 or M3 will be exponentiall faster than if the results were calculated from scratch. will only be evaluated if M1-M7 are completed. Will only receive points if incremental computation of M2 and M3 are implemented.
+**M8**: Remove a node  and edge from the graph. Incrementally compute M2 and M3 such that the cost of the insert plus the cost of the next call to M2 or M3 will be exponentiall faster than if the results were calculated from scratch. will only be evaluated if M1-M7 are completed. Will only receive points if incremental computation of M2 and M3 are implemented.
 
 ## The Code
 Included in this repo are 3 header files: `GraphHelper.h`, `FeatureGraph.h` and `GraphAnalyzer.h`, and three .cpp files `FeatureGraph.cpp`, `GraphAnalyzer.cpp` and `GraphTest.cpp`. 
