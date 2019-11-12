@@ -56,7 +56,7 @@ The `FeatureGraph` files are meant to matinain the graph information.  You will 
 
 The `GraphAnalyzer` files are meant to be a wrapper around the `FeatureGraph` so the code to build the graph and analyze the graph are separated. This class contains all of the methods M1-M8 outlined above. 
 
-Note that both the `GraphAnalyzer` and the `FeatureGraph` have an insert function. you will implement the actual insertion into the graph in the `FeatureGraph` class stored in the `GraphAnalyzer` because that is where the graph is stored. The `GraphAnalyzer` has its own insert function so it can follow the cost constriants on M2 and M3 at each insert as outlined in M7. 
+Note that both the `GraphAnalyzer` and the `FeatureGraph` have an insert function. you will implement the actual insertion into the graph in the `FeatureGraph` class stored in the `GraphAnalyzer` because that is where the graph is stored. The `GraphAnalyzer` has its own insert function so it can follow the cost constriants on M2 and M3 at each insert as outlined in M7. In order to meet these constraints, you will need to have a heap as a private field in `GraphAnalyzer`.
 
 Our testing code will always follow the following the pattern:
 
