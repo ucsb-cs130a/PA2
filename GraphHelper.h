@@ -1,19 +1,42 @@
+#ifndef HELPER_H
+#define HELPER_H
+
 using namespace std;
 
 
-struct edge 
-{
-    int srcId, destId;
-}
-
-struct triangle {
-    int id1;
-    int id2;
-    int id3;
+struct Edge {
+    // NOTE: Do not edit Edge struct
+    int IdA, IdB, weight;
     
-    // Might need to make a special constructor and override '=='
-    //triangle(int a, int b, int c) {}
+    Edge(int IdA, int IdB, int weight): IdA(IdA), IdB(IdB), weight(weight) {}
+};
 
-    //bool operator==(const triangle& other) const {
-    //    return (other.id1 == id1) && (other.id2 == id2) && other.(id3 == id3); 
-}    
+class Triangle {
+    // TODO make a Triangle class with appropriate fields and methods
+
+public:
+
+    // TODO make appropriate constuctor
+    Triangle() { }
+    
+    // Operator overloading for storage in priority queue
+    // returns true iff t2 is greater than t1. 
+    //
+    // Note: Must be transitive
+    //      This means if t1<t2 and t2<t3 than t1< t3
+    bool operator < (Triangle const &other) {
+        //TODO
+        return true;
+    }  
+
+};
+
+
+#endif
+
+    
+
+
+
+
+    

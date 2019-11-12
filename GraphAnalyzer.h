@@ -1,26 +1,37 @@
-#include <string>
-#include <vector>
-#include "GraphHelper.h"
+#ifndef ANALYZER_H
+#define ANALYZER_H
+
+#include "FeatureGraph.h"
 
 
 using namespace std;
 
 
-class Graph {
 
-public:
-    vector<vector<int>> adjList;
-       
+class GraphAnalyzer {
 
-    // Constructor
-    // 
-    // N: The number of nodes
-    // nodeIds: the ids of nodes as integers
-    // d: the sizee of the skill vectors of all nodes
-    // nodeIDtoSkillsMap: a map form the nodeID to their skiils vector
-    Graph(int N, vector<int> nodeIDs, vector<Edge> edges, int d, map<int, vector<float>> nodeIDToSkillsMap);
 
-    // Return the diameter of the network.
+public:	
+		
+	FeatureGraph G;
+	//TODO: Store a heap of triangeles using cpp prioirty_queue
+
+    //constructor
+	// 
+	// G: FeatureGraph to build on
+    GraphAnalyzer(FeatureGraph& G): G(G) {};
+
+
+    // Insert given node and corresponding features into graph
+    // You may assume the number of features is the same as all other nodes in the graph
+    void insert(int nodeId, vector<float> features);
+
+
+    //Insert given edge into graph
+    // You may assume that the edge contains nodes already inserted into the graph
+    void insert(Edge e);
+
+   	// Return the diameter of the network.
     int diameter();
 
     // Return the ratio of open triangles to closed triangles.
@@ -29,7 +40,7 @@ public:
     // Return the top k open triangles ranked by the total weight on their edges.
     // 
     // K: number of triangles to return
-    vector<Triangle> topKOpenTriangles(int k);
+    string topKOpenTriangles(int k);
 
     // Return the top k skilled individuals around a given node based on a given weighting
     //
@@ -49,7 +60,8 @@ public:
     // nodeB id of second node
     // k: number of neighbors to evaluate for each node
     // w: weight vector
-    float jacardIndexOfTopKNeighborhoods(int nodeA, int nodeB, int k, int w);
-}  
+    float jacardIndexOfTopKNeighborhoods(int nodeA, int nodeB, int k, vector<float> w);
 
+};
 
+#endif
