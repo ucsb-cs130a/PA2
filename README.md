@@ -48,11 +48,11 @@ Bonus:
 **M8**: Remove a node  and edge from the graph. Incrementally compute M2 and M3 such that the cost of the insert plus the cost of the next call to M2 or M3 will be exponentiall faster than if the results were calculated from scratch. will only be evaluated if M1-M7 are completed. Will only receive points if incremental computation of M2 and M3 are implemented.
 
 ## The Code
-Included in this repo are 3 header files: `GraphHelper.h`, `FeatureGraph.h` and `GraphAnalyzer.h`, and three .cpp files `FeatureGraph.cpp`, `GraphAnalyzer.cpp` and `GraphTest.cpp`. 
+Included in this repo are 3 header files: `GraphHelper.h`, `FeatureGraph.h` and `GraphAnalyzer.h`, and three .cpp files: `FeatureGraph.cpp`, `GraphAnalyzer.cpp` and `GraphTest.cpp`. 
 
 `GraphHelper.h` contains an edge struct and a Triangle class to help you build your graph class. You may only edit the Triangle class.
 
-The `FeatureGraph` files are meant to matinain the graph information.  You will have to determine the apporpriate fields and implement the basic graph operations including the constructor and insert.
+The `FeatureGraph` files are meant to matinain the graph information.  You will have to determine the appropriate fields and implement the basic graph operations including the constructor and insert.
 
 The `GraphAnalyzer` files are meant to be a wrapper around the `FeatureGraph` so the code to build the graph and analyze the graph are separated. This class contains all of the methods M1-M8 outlined above. 
 
