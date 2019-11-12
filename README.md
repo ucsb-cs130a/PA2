@@ -3,9 +3,13 @@ UCSB 130A Fall 2019 PA2 starter code
 
 Notes: 
 *Be sure to read the "Policy on Academic Integrity" in the course syllabus.
+
 *If you are confused, ask on Piazza, during office hours, or during discussion sections.
+
 *Remember no late assignments will be accepted. at all.
+
 *Submit your answers on Gradescope (keep your eye out for further instructions in the next few days)
+
 *Start Early
 
 ## Overview
@@ -42,7 +46,8 @@ M8: Remove a node  and edge from the graph. Incrementally compute M2 and M3 such
 
 ## The Code
 Included in this repo are 3 header files: `GraphHelper.h`, `FeatureGraph.h` and `GraphAnalyzer.h`, and three .cpp files `FeatureGraph.cpp`, `GraphAnalyzer.cpp` and `GraphTest.cpp`. 
-`GraphHelper.h` contains an edge struct and a Triangle class fto help you build your graph class. You may only edit the Triangle class.
+
+`GraphHelper.h` contains an edge struct and a Triangle class to help you build your graph class. You may only edit the Triangle class.
 
 The `FeatureGraph` files are meant to matinain the graph information.  You will have to determine the apporpriate fields and implement the basic graph operations including the constructor and insert.
 
@@ -51,8 +56,11 @@ The `GraphAnalyzer` files are meant to be a wrapper around the `FeatureGraph` so
 Note that both the `GraphAnalyzer` and the `FeatureGraph` have an insert function. you will implement the actual insertion into the graph in the `FeatureGraph` class stored in the `GraphAnalyzer` because that is where the graph is stored. The `GraphAnalyzer` has its own insert function so it can follow the cost constriants on M2 and M3 at each insert as outlined in M7. 
 
 Our testing code will always follow the following the pattern:
+
 1. Build a graph using the `FeatureGraph` constructor
+
 2. Make a `GraphAnalyzer` by passing in the above graph into the `GraphAnalyzer` constructor
+
 3. Call all functions, including insert, on `GraphAnalyzer`
 
 `GraphAnalyzer` will insert the node or edge into its graph and then make updates for fast computation of M2 and M3. We have already placed the call to `FeatureGraph` insert in the `GraphAnalyzer` inserts.
@@ -67,4 +75,5 @@ It is highly recommended that you do not edit the make file, and instead add you
 
 ## Deadlines
 **Novemebr 23rd**: In order to encourage you to start early 10% of your grade will be given for passing autograded testing for M4 by November 23rd at 11:59pm
+
 **December 7th**: The entire assignment will be due December 7th at 11:59pm
