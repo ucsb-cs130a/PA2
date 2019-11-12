@@ -10,6 +10,8 @@ Notes:
 
 *Submit your answers on Gradescope (keep your eye out for further instructions in the next few days)
 
+*Read the entire README before starting
+
 *Start Early
 
 ## Overview
@@ -68,7 +70,8 @@ Our testing code will always follow the following the pattern:
 `GraphTest.cpp` gives an example for how we call each of your GraphAnalyzer methods. 
 
 To run `GrapTest`, run the following commands:
-```make
+```
+make
 ./GraphTester
 ```
 It is highly recommended that you do not edit the make file, and instead add your ownd tests to GraphTester.
