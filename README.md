@@ -44,6 +44,7 @@ If the weight vector w = \[w1, w2, w3 ... wd] and the skill fector of a neighbor
 **M7**: Insert a node into the graph. Insert an edge into the graph. Incrementally compute M2 and M3 such that the cost of the insert plus the cost of the next call to M2 or M3 will be exponentiall faster than if the results were calculated from scratch.
 
 Bonus:
+
 **M8**: Remove a node  and edge from the graph. Incrementally compute M2 and M3 such that the cost of the insert plus the cost of the next call to M2 or M3 will be exponentiall faster than if the results were calculated from scratch. will only be evaluated if M1-M7 are completed. Will only receive points if incremental computation of M2 and M3 are implemented.
 
 ## The Code
