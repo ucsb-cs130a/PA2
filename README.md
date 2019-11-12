@@ -75,7 +75,7 @@ To run `GraphTest`, run the following commands:
 make
 ./GraphTester
 ```
-It is highly recommended that you do not edit the make file, and instead add your ownd tests to GraphTester.
+It is highly recommended that you do not edit the make file, and instead add your own tests to GraphTester.
 
 ## Deadlines
 **Novemebr 23rd**: In order to encourage you to start early 10% of your grade will be given for passing autograded testing for M4 by November 23rd at 11:59pm
