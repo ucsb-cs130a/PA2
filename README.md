@@ -70,7 +70,7 @@ Our testing code will always follow the following the pattern:
 
 `GraphTest.cpp` gives an example for how we call each of your GraphAnalyzer methods. 
 
-To run `GrapTest`, run the following commands:
+To run `GraphTest`, run the following commands:
 ```
 make
 ./GraphTester
