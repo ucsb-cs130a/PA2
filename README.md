@@ -23,7 +23,7 @@ There will be a small deadline on November 23rd with 10% of your grade. The rest
 
 This project will be graded using Gradescope's autograder. More instuctions on that will come in the next few days. 
 
-## The Tasks
+## Tasks
 You will write code which maintains infomration about a weighted, undirected, graph where each node has an integer id and a skill vector.
 
 You must implement the following methods:
