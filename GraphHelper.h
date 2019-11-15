@@ -1,7 +1,16 @@
 #ifndef HELPER_H
 #define HELPER_H
 
+#include <vector>
 using namespace std;
+
+struct Node {
+    int id;
+    vector<float> features;
+    
+    Node(int id, vector<float> features): id(id), features(features) {}
+    Node(const Node &n2) { id = n2.id; features=n2.features;}
+};
 
 
 struct Edge {
