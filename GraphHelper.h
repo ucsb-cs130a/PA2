@@ -5,6 +5,7 @@
 using namespace std;
 
 struct Node {
+    // NOTE: Do not edit node struct
     int id;
     vector<float> features;
     
