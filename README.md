@@ -29,7 +29,7 @@ You will write code which maintains infomration about a weighted, undirected, gr
 
 You must implement the following methods:
 
-**M1**: Return the diameter of the graph.
+**M1**: Return the diameter of the graph. The distance between two nodes is given by the sum of the edge weights on the shortest path between them.
 
 **M2**: Return the ratio of open triangles to closed triangles.
 
@@ -83,6 +83,6 @@ Please submit to Gradescope, unzipped:
 `FeatureGraph.cpp`, `FeatureGraph.h`, `GraphAnalyzer.cpp`, `GraphAnalyzer.h`, and `GraphHelper.h`. Do not dubmit any other files.
 
 ## Deadlines
-**Novemebr 23rd**: In order to encourage you to start early 10% of your grade will be given for passing autograded testing for M4 by November 23rd at 11:59pm
+**Novemebr 23rd**: In order to encourage you to start early 10% of your grade will be given for passing autograded testing for M4 by November 23rd at 11:59pm.
 
 **December 7th**: The entire assignment will be due December 7th at 11:59pm
