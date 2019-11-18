@@ -10,7 +10,7 @@ GraphTest.o: GraphTest.cpp GraphAnalyzer.h FeatureGraph.h GraphHelper.h
 GraphAnalyzser.o: GraphAnalyzer.cpp FeatureGraph.h GraphHelper.h
 	$(CXX) $(CXXFLAGS) -c GraphAnalyzer.cpp
 
-FeatureGraphraph.o: FeatureGraph.cpp GraphHelper.h
+FeatureGraph.o: FeatureGraph.cpp GraphHelper.h
 	$(CXX) $(CXXFLAGS) -c FeatureGraph.cpp
 
 
