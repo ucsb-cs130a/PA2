@@ -1,7 +1,7 @@
 # PA2
 UCSB 130A Fall 2019 PA2 starter code
 
-Notes: 
+Notes: ve
 *Be sure to read the "Policy on Academic Integrity" in the course syllabus.
 
 *If you are confused, ask on Piazza, during office hours, or during discussion sections.
@@ -24,7 +24,8 @@ There will be a small deadline on November 23rd with 10% of your grade. The rest
 This project will be graded using Gradescope's autograder. More instuctions on that will come in the next few days. 
 
 ## Tasks
-You will write code which maintains infomration about a weighted, undirected, graph where each node has an integer id and a skill vector.
+You will write code which maintains infomration about a weighted, undirected, graph where each node has an integer id and a skill 
+.
 
 You must implement the following methods:
 
@@ -34,7 +35,7 @@ You must implement the following methods:
 
 **M3**: Return the top k open triangles. A triangle is given higher prioirty if it has a larger total edge weight. Store the triangles in a heap (see M7)
 
-**M4**: (Early Deadline) Given a seed node with id i, and weight vector w, find the top k-skilled individuals around i.
+**M4**: (Early Deadline) Given a seed node with id i, and weight vector w (unrelated to edge weights), find the top k-skilled individuals around i.
 If the weight vector w = \[w1, w2, w3 ... wd] and the skill fector of a neighboring node f = \[f1, f2, ....\], then the prioirity of a node is given by dot(w, f) = w1f1 + w2f2 + .... + wdfd
 
 **M5**: Given a seed node i and weight vector w, give the highest scoring node that does not have an edge connecting to i
@@ -76,6 +77,10 @@ make
 ./GraphTester.o
 ```
 It is highly recommended that you do not edit the make file, and instead add your own tests to GraphTester.
+
+## Submission:
+Please submit to Gradescope, unzipped:
+`FeatureGraph.cpp`, `FeatureGraph.h`, `GraphAnalyzer.cpp`, `GraphAnalyzer.h`, and `GraphHelper.h`. Do not dubmit any other files.
 
 ## Deadlines
 **Novemebr 23rd**: In order to encourage you to start early 10% of your grade will be given for passing autograded testing for M4 by November 23rd at 11:59pm
