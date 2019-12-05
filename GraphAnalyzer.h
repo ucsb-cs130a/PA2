@@ -61,6 +61,12 @@ public:
     // k: number of neighbors to evaluate for each node
     // w: weight vector
     float jacardIndexOfTopKNeighborhoods(int nodeAID, int nodeBID, int k, vector<float> w);
+    
+    // Remove the given node and all edges associate with it
+    void remove(int nodeId);
+
+    // Remove the edge attached to the given nodes. Does not remove the nodes themselves
+    void remove(int nodeIdA, int nodeIdb);
 
 };
 
